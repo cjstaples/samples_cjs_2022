@@ -14,23 +14,23 @@ def anagram_check(string1, string2):
 
 
 def main():
-    print('(anagram) main:')
+    print("(anagram) main:")
     print()
-    print(f":::::::::::::::::::::::::::::::::::::::::::::::")
+    print(":::::::::::::::::::::::::::::::::::::::::::::::")
 
     str1 = "rode"
     str2 = "doer"
     check = anagram_check(str1, str2)
     print(f"SANITY: inputs {str1} and {str2}, are anagrams? : {check}")
 
-    print(f":::::::::::::::::::::::::::::::::::::::::::::::")
+    print(":::::::::::::::::::::::::::::::::::::::::::::::")
     print()
-    print('(anagram) end::')
+    print("(anagram) end::")
 
     return 0
 
 
 # ----------------------------------------
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = main()
     sys.exit(0)

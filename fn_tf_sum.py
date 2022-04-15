@@ -37,14 +37,18 @@ def fb_sums(begin, end):
         if check_five(i):
             by_five = by_five + i
 
-    sums = {'divisible_by_three': by_three, 'divisible_by_five': by_five, 'divisible_by_three_and_five': by_both}
+    sums = {
+        "divisible_by_three": by_three,
+        "divisible_by_five": by_five,
+        "divisible_by_three_and_five": by_both,
+    }
     return sums
 
 
 def main():
-    print('(fb sums) main:')
+    print("(fb sums) main:")
     print()
-    print(f":::::::::::::::::::::::::::::::::::::::::::::::")
+    print(":::::::::::::::::::::::::::::::::::::::::::::::")
 
     range_begin = 1
     range_end = 1000
@@ -53,14 +57,14 @@ def main():
     for val in sums:
         print(f"{val} : {sums[val]}")
 
-    print(f":::::::::::::::::::::::::::::::::::::::::::::::")
+    print(":::::::::::::::::::::::::::::::::::::::::::::::")
     print()
-    print('(fb sums) end::')
+    print("(fb sums) end::")
 
     return 0
 
 
 # ----------------------------------------
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = main()
     sys.exit(0)
