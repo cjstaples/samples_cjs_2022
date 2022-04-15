@@ -19,14 +19,23 @@ def check_five(val):
         return False
 
 
-# add integers in supplied range
-# return a dict containing all the sums
 def fb_sums(begin, end):
+    """add integers BETWEEN supplied range; return a dict containing desired sums and suitable names
+
+    :param begin: start of range
+    :type begin: int
+    :param end: end of range
+    :type end: int
+    :returns: sums
+    :rtype: dict
+    """
     by_three = 0
     by_five = 0
     by_both = 0
 
-    for i in range(begin, end):
+    # increase begin value by 1, so that we start counting AFTER low end of the range.
+    # Makes test names and values more consistent.
+    for i in range(begin + 1, end):
         # both true, add to by_both
         if check_three(i) & check_five(i):
             by_both = by_both + i

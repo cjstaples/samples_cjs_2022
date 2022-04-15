@@ -6,6 +6,13 @@ import sys
 
 
 def reformat_date(in_date):
+    """Change string date value from one format to another format
+
+    :param in_date: string date value, format M/D/YYYY
+    :type in_date: str
+    :returns: out_date: string date value, format YYYYMMDD
+    :rtype: str
+    """
 
     dt_obj = datetime.strptime(in_date, "%m/%d/%Y")
     out_date = dt_obj.strftime("%Y%m%d")
